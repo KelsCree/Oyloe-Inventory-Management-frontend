@@ -21,13 +21,17 @@ export default function LoginScreen({ navigation }:{ navigation:any }) {
                 <Input
                     placeholder='Username'
                     placeholderTextColor={brownPalette.brown7}
-                    leftIcon={{ type: 'font-awesome', name: 'chevron-right', color: brownPalette.brownBase }}
+                    leftIcon={{ type: 'font-awesome',
+                        name: 'chevron-right',
+                        color: brownPalette.brownBase }}
                 />
                 <Input
                     placeholder='Password'
                     secureTextEntry={ true }
                     placeholderTextColor={ brownPalette.brown7 }
-                    leftIcon={{ type: 'font-awesome', name: 'chevron-right', color: brownPalette.brownBase }}
+                    leftIcon={{ type: 'font-awesome',
+                        name: 'chevron-right',
+                        color: brownPalette.brownBase }}
                 />
                 <View style={ styles.buttonContainer }>
                     <Button 

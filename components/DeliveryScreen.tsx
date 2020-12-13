@@ -79,7 +79,7 @@ const DeliveryScreen:React.FC<DeliveryScreenProps> = ({navigation,route}) => {
                         containerStyle={styles.cardContainerStyle}
                         >
                         {displayProductsDelivered()}
-                        </Card>
+                    </Card>
                     : displayLogo()
                 }
                 

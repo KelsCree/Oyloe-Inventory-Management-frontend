@@ -31,7 +31,6 @@ const InventoryScreen: React.FC <InventoryProps> = ({ navigation,products }) => 
     },[])
 
     const renderInventory = ( inventory:Product[]) => (
-        // <Item name={item.name} quantity={item.quantity} index={index} key={item._id} description={item.description}/>
         inventory.map((product:Product, index) => (
             <View style={styles.item} key={product._id}>
                 <View style={styles.productInfoContainer}>

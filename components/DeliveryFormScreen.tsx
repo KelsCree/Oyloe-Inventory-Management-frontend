@@ -9,8 +9,7 @@ import   { Feather } from '@expo/vector-icons/'
 
 
 
-
-
+//reminder to ask Bryan what the export interface does
 export interface HomeScreenProps {
     navigation: NavigationScreenProp<any,any>;
     products: Product[]
@@ -32,15 +31,15 @@ export const DeliveryFormScreen:React.FC<HomeScreenProps> = ({navigation, produc
                 })
                 setSelectedProduct('CyberMul')
                 setQuantity('')
-        } else {
-            return null
-        }
+        // } else {
+        //     return null
+        // } the else may not be necessary to include
     }
 
     const getProductOptions = (products:Product[]) => {
         return products.map(product => {
-            return {label: product.name, value: product.name, //icon: () => <Entypo name='chevron-small-right' size={18} color={'#000'} />
-        }})
+            return {label: product.name, value: product.name}
+        })
     }
 
     
@@ -72,7 +71,10 @@ export const DeliveryFormScreen:React.FC<HomeScreenProps> = ({navigation, produc
                     <Input 
                         containerStyle={styles.textBox} 
                         label={'Quantity'}
-                        labelStyle={{color: brownPalette.brown9, fontFamily:'Futura', fontWeight: '800',fontSize:18}}
+                        labelStyle={{color: brownPalette.brown9,
+                                    fontFamily:'Futura',
+                                    fontWeight: '800',
+                                    fontSize:18}}
                         leftIcon={<Feather name='hash' size={15} color={brownPalette.brown10} />}
                         onChangeText={text => setQuantity(text)} >
                     </Input>
