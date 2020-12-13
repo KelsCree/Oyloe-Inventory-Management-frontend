@@ -50,26 +50,6 @@ const InventoryScreen: React.FC <InventoryProps> = ({ navigation,products }) => 
             )
         )
     );
-
-    // const Item = ({ name ,quantity, description, index }:{name:string, quantity: number, description:string, index:number}) => (
-    //     <View style={styles.item} >
-    //         <View style={styles.productInfoContainer}>
-    //             <Text style={styles.name}>{name}</Text>
-    //             <Text style={styles.description}>{description}</Text>
-    //         </View>
-    //             <View style={styles.countContainer}>
-    //                 <View style={styles.currentCountContainer}>
-    //                     <Text style={styles.currentCount}>Current Count: </Text>
-    //                     <TextInput 
-    //                         style={styles.input}
-                            
-    //                         />
-    //                 </View>    
-    //                 <Text style={styles.previousCount}>Previous Count: {quantity}</Text>            
-    //             </View>
-
-    //     </View>
-    // );
         
     return (
         <SafeAreaView style={styles.container} >
