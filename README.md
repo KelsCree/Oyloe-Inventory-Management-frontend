@@ -11,7 +11,7 @@ Native mobile app designed to help remote oilfield employees track inventory mor
 
 
 ## About
-I have worked in the oilfield as a drilling fluids engineer for 9+ years. Every location I have worked has been remote and the climate is often 
+I worked in the oilfield as a drilling fluids engineer for 9+ years. Every location I have worked has been remote and the climate is often 
 extreme (North Dakota in the winter). Inventory management is one of the more unpleasant tasks to do in sub zero weather. I would have to go around location 
 and count all products on location daily with a pen and paper. I would then have to bring that inventory count back to a computer to input it into a daily report. 
 This was tedious, repetitive, and error prone. The Oyloe Inventory Management system allows workers to input daily inventory counts directly through an app on their
@@ -39,15 +39,15 @@ the delivered products with the quantity and it will populate the new ticket wit
 ![Create Delivery Ticket gif](https://media.giphy.com/media/IlABEFlc5xMWpZvIgN/giphy.gif)
 
 ### Input Daily Inventory
-User can click on "Input Daily Inventory" to load the inventory screen. On this screen, all products currently on location will be listed with their name, a short description of the product, and the quantity from the previous day. User can input inventory quantities on each product card to update the current quantity available on location. Once all product quantity changes have been entered, user can hit "Submit Daily Inventory" to submit inventory changes. 
+User can click on "Input Daily Inventory" to load the inventory screen. On this screen, all products currently on location will be listed with their name, a short description, and the quantity from the previous day. User can input inventory quantities on each product card to update the current quantity available on location. Once all product quantity changes have been entered, user can hit "Submit Daily Inventory" to submit inventory changes. 
 
 ![Input Daily Inventory Video gif](https://media.giphy.com/media/fFump5Og2U4tfSb2Cy/giphy.gif)
 
 ## Challenges
-Implementing Typescript for the first time was difficult. I had to develop custom data types for all of the product info that was being fetched from my back end. I found the documentation for Typescript to be extremely helpful in determining the best way to implement my custom typing. Coming from React to React Native also brought some unique challenges as far as styling. Styling for a mobile device requires a different approach then in browser style. I was able to use a great styling library called React Native Elements to implement my design.
+Implementing Typescript for the first time was difficult. I had to develop custom data types for all of the product info that was being fetched from my back end. I found the documentation for Typescript to be extremely helpful in determining the best way to implement my custom typing. Coming from React to React Native also brought some unique styling challenges. Styling for a mobile device requires a different approach then in browser style. I was able to use a great styling library called React Native Elements to implement my design.
 
 ## Future Implementation
- - User can add custom products to directly to delivery tickets for abnormal deliveries
+ - User can add custom products directly to delivery tickets for abnormal deliveries
  - User can be tied to more than one inventory to manage multiple locations from one account
  - Product quantity changes will be optimistically rendered on inventory screen
  

@@ -57,12 +57,12 @@ const InventoryScreen: React.FC <InventoryProps> = ({ navigation,products }) => 
                 {renderInventory(inventory)}
             </ScrollView>
             <Button 
-                                        buttonStyle={styles.buttonStyle}
-                                        title="Submit Daily Inventory"
-                                        titleStyle={styles.buttonTitleStyle}
-                                        containerStyle={styles.buttonContainerStyle}
-                                        onPress={() => navigation.navigate('Home')}
-                                        />              
+                buttonStyle={styles.buttonStyle}
+                title="Submit Daily Inventory"
+                titleStyle={styles.buttonTitleStyle}
+                containerStyle={styles.buttonContainerStyle}
+                onPress={() => navigation.navigate('Home')}
+            />              
         </SafeAreaView>        
     )
 }
